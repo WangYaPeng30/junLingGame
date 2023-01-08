@@ -1,0 +1,251 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+    margin-right: 20px;
+    vertical-align: text-bottom;
+    overflow-y: auto;
+}
+.getContainer{
+    display: inline-block;
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+#orderWay{
+    display:inline-block;
+    margin: 40px 0 20px;
+}
+option{
+    display: inline-block;
+}
+.getJunling{
+    display: inline-block;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    padding: 4px 40px;
+    margin: 10px 0 0 240px;
+    color: #000;
+    transition: all .4s;
+}
+.getJunling:hover{
+    color: aqua;
+    transform: translateY(-10px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.getJunling:active{
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.orderList{
+    list-style: none;
+    padding: 0 10px;
+}
+.operation{
+    position: absolute;
+    bottom: 0;
+    height: 355px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    /* border-right: 1px solid #000; */
+}
+.lineupOne{
+    /* display: inline-block; */
+    display: grid;
+    float: left;
+    width: 500px;
+    height: 110%;
+    /* background-color: aqua; */
+    /* vertical-align: text-bottom; */
+    margin-left: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.itemOne{
+    border: 1px solid #000;
+    /* transition: all 2s; */
+    /* background-color: orange; */
+}
+.getJunlingOne{
+    display: inline-block;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    padding: 4px 40px;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: all .2s;
+}
+.getJunlingOne:hover{
+    color: aqua;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.getJunlingOne:active{
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.delJunlingOne{
+    display: inline-block;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    padding: 4px 40px;
+    color: #000;
+    margin-top: 10px;
+    transition: all .2s;
+}
+.delJunlingOne:hover{
+    color: aqua;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.delJunlingOne:active{
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.delList{
+    float: left;
+    list-style: none;
+    margin-left: -18px;
+}
+@keyframes moveFromTop {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.delItem{
+    border: 1px solid #000;
+    width: 28px;
+    height: 28px;
+    margin-right: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    line-height: 28px;
+    animation: moveFromTop .6s ease-in-out;
+    transition: all .2s;
+}
+.delItem:hover{
+    background-color: red;
+    transform: translateY(-4px);
+}
+.delItem:active{
+    transform: translateY(0);
+}
+.delActive{
+    display: inline-block;
+}
+.lineupTwo{
+    /* display: inline-block; */
+    display: grid;
+    float: right;
+    width: 500px;
+    height: 110%;
+    /* background-color: aqua; */
+    /* vertical-align: text-bottom; */
+    margin-left: 20px;
+    margin-top: -41px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.itemTwo{
+    border: 1px solid #000;
+    /* transition: all 2s; */
+    /* background-color: orange; */
+}
+
+
+.getJunlingTwo{
+    display: inline-block;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    float: right;
+    padding: 4px 40px;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: all .2s;
+}
+.getJunlingTwo:hover{
+    color: aqua;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.getJunlingTwo:active{
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.delJunlingTwo{
+    display: inline-block;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    float: right;
+    padding: 4px 40px;
+    color: #000;
+    margin-top: 10px;
+    transition: all .2s;
+}
+.delJunlingTwo:hover{
+    color: aqua;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.delJunlingTwo:active{
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.delListTwo{
+    float: right;
+    list-style: none;
+    transform: translateX(230px);
+}
+.delItemTwo{
+    border: 1px solid #000;
+    width: 28px;
+    height: 28px;
+    margin-right: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    line-height: 28px;
+    animation: moveFromTop .6s ease-in-out;
+    transition: all .2s;
+}
+.delItemTwo:hover{
+    background-color: red;
+    transform: translateY(-4px);
+}
+.delItemTwo:active{
+    transform: translateY(0);
+}
+.delActive{
+    display: inline-block;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="chooseOrder">
+        <label for="orderWay">请选择排序方式：</label>
+        <select name="orderWay" id="orderWay">
+            <option value="skill" selected>以战力排序</option>
+            <option value="blood">以血量排序</option>
+            <option value="spell">以法术量排序</option>
+            <option value="attack">以攻击排序</option>
+            <option value="sunres">以光抗排序</option>
+            <option value="wingres">以翼抗排序</option>
+            <option value="spiritres">以灵抗排序</option>
+            <option value="talentMul">以天赋影响力排序</option>
+        </select>
+        <a href="javascript:;" class="getJunling">随机获取一个君灵</a>
+    </div>
+    <div class="container">
+        <h3 class="orderTitle">战力排序如下：</h3>
+        <ul class="orderList"></ul>
+    </div>
+    <div class="getContainer"></div>
+    <div class="operation">
+        <h3 style="float: left;">阵容1</h3>
+        <div class="lineupOne">
+            <div class="itemOne" style="color: red;">
+                <!-- <h3 style="text-align: center;">夫西里斯</h3>
+                <p >星级:3 天赋影响力:20</p>
+                <p>血量:500</p>
+                <p>攻击:20 光抗:40 <br>翼抗:50 灵抗:60</p> -->
+            </div>
+            <div class="itemOne" style="color: rgb(65, 226, 65);">
+            </div>
+            <div class="itemOne" style="color: rgb(72, 173, 212);">
+            </div>
+            <div class="itemOne" style="color: rgb(224, 184, 51);">
+            </div>
+            <div class="itemOne" style="color: rgb(230, 161, 33);">
+            </div>
+            <div class="itemOne" style="color: rgb(235, 85, 110);">
+            </div>
+        </div>
+        <div>
+            <a href="javascript:;" class="getJunlingOne">获取</a>
+            <a href="javascript:;" class="delJunlingOne">删除</a>
+        </div>
+        <ul class="delList">
+            <li class="delItem">1</li>
+            <li class="delItem">2</li>
+            <li class="delItem">3</li>
+            <li class="delItem">4</li>
+            <li class="delItem">5</li>
+            <li class="delItem">6</li>
+        </ul>
+
+
+        <h3 style="float: right;margin-top: -17px;margin-left: 14px;">阵容2</h3>
+        <div class="lineupTwo">
+            <div class="itemTwo" style="color: red;">
+                <!-- <h3 style="text-align: center;">夫西里斯</h3>
+                <p >星级:3 天赋影响力:20</p>
+                <p>血量:500</p>
+                <p>攻击:20 光抗:40 <br>翼抗:50 灵抗:60</p> -->
+            </div>
+            <div class="itemTwo" style="color: rgb(65, 226, 65);">
+            </div>
+            <div class="itemTwo" style="color: rgb(72, 173, 212);">
+            </div>
+            <div class="itemTwo" style="color: rgb(224, 184, 51);">
+            </div>
+            <div class="itemTwo" style="color: rgb(230, 161, 33);">
+            </div>
+            <div class="itemTwo" style="color: rgb(235, 85, 110);">
+            </div>
+        </div>
+        <div style="height: 100px;margin-top:-41px;float:right;">
+            <a href="javascript:;" class="getJunlingTwo">获取</a>
+            <a href="javascript:;" class="delJunlingTwo">删除</a>
+        </div>
+        <ul class="delListTwo">
+            <li class="delItemTwo">1</li>
+            <li class="delItemTwo">2</li>
+            <li class="delItemTwo">3</li>
+            <li class="delItemTwo">4</li>
+            <li class="delItemTwo">5</li>
+            <li class="delItemTwo">6</li>
+        </ul>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+    <script src="./dataOrder.js"></script>
+    <script src="./getJunLing.js"></script>
+</body>
+
+</html>
